@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> `crossterm-zuko` is a temporary, source-compatible publication for Zuko. It
+> contains upstream Crossterm commit `3cea5b2`, including the zero-coordinate
+> parser underflow fix from `d4e9929`. Applications should use upstream
+> `crossterm` once that fix is available in a crates.io release. Report general
+> Crossterm issues upstream; this fork does not accept unrelated features.
+
 <h1 align="center"><img width="440" src="docs/crossterm_full.png" /></h1>
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z8QK6XU749JB2) ![Travis][s7] [![Latest Version][s1]][l1] [![MIT][s2]][l2] [![docs][s3]][l3] ![Lines of Code][s6] [![Join us on Discord][s5]][l5]

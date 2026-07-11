@@ -1,10 +1,10 @@
 [package]
-name = "crossterm"
-version = "0.29.0"
+name = "crossterm-zuko"
+version = "0.29.0-zuko.1"
 authors = ["T. Post"]
-description = "A crossplatform terminal library for manipulating terminals."
-repository = "https://github.com/crossterm-rs/crossterm"
-documentation = "https://docs.rs/crossterm/"
+description = "Temporary Zuko compatibility release of Crossterm with safe zero-coordinate parsing."
+repository = "https://github.com/adonm/crossterm"
+documentation = "https://docs.rs/crossterm-zuko/"
 license = "MIT"
 keywords = ["event", "color", "cli", "input", "terminal"]
 exclude = ["target", "Cargo.lock"]
@@ -12,6 +12,7 @@ readme = "README.md"
 edition = "2021"
 rust-version = "1.63.0"
 categories = ["command-line-interface", "command-line-utilities"]
+publish = ["crates-io"]
 
 [lib]
 name = "crossterm"
@@ -123,3 +124,7 @@ required-features = ["events"]
 [[example]]
 name = "copy-to-clipboard"
 required-features = ["osc52"]
+
+# Keep this compatibility crate standalone when it is checked out inside
+# another repository's workspace for publication verification.
+[workspace]
